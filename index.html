@@ -552,7 +552,7 @@
       <!-- Section More Options-->
       <section class="secondary_menu_options" style="width: auto"  >
          <div class="row">
-            <div class="col-xl-12 col-lg-12">
+            <div class="hide_unhide">
                <ul class="secondary_menu">
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Why Invest In HP</a></li>
@@ -564,6 +564,24 @@
                   <li><a href="#">Gallery</a></li>
                </ul>
             </div>
+            <div class="topnav">
+                  <a href="#home" class="active">&nbsp;</a>
+                  <!-- Navigation links (hidden by default) -->
+                  <div id="myLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Why Invest In HP</a></li>
+                    <li><a href="#">State Profile</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Tenders</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Grievance</a></li>
+                    <li><a href="#">Gallery</a></li>
+                  </div>
+                  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
          </div>
       </section>
       <!-- Section More Options-->
@@ -958,6 +976,18 @@
       <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
       <!-- <script src="assets/js/popper.min.js"></script> -->
       <script src="assets/js/bootstrap.min.js"></script>
+
+      <script>
+         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+      </script>
     
    </body>
    <!-- Mirrored from 48months.mygov.in/performance-dashboard/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Aug 2018 06:16:32 GMT -->
